@@ -31,12 +31,10 @@ const mapStateToProps = (state) => {
   };
 };
 
-function mapDispatchToProps(dispatch) {
-  return {
-    onTodoClick: (data) => {
-      dispatch(addTodo(data));
-    },
-  };
-}
+const mapDispatchToProps = dispatch => ({
+  onTodoClick: (data) => {
+    dispatch(addTodo(data));
+  },
+});
 
 export default connect(mapStateToProps, mapDispatchToProps)(TodoContainer);
