@@ -1,0 +1,17 @@
+<html>
+<head>
+<title>Troll button</title>
+</head>
+<body>
+<div id="root">
+  <button onclick="troll()" id="root">
+    hali
+  </button>
+</div>
+<script>
+function troll() {
+  document.getElementById('root').innerHTML += "<button onclick='troll()'>hehe</button>"
+}
+</script>
+</body>
+</html>
